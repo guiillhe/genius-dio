@@ -26,7 +26,7 @@ let lightColor = (element, number) => {
   }, number -250);
   setTimeout(()=>{
     element.classList.remove('selected')
-  },number);
+  });
 
 }
 
@@ -34,13 +34,13 @@ let lightColor = (element, number) => {
 
 let checkOrder =()=>{
   for(let i in clickedOrder){
-    if(clickedOrder != order[i]){
-      gameOver()
+    if(clickedOrder[i] != order[i]){
+      gameOver();
       break;
     }
   }
   if(clickedOrder.length == order.length){
-    alert(`Pontuação: ${score}\nVocê acertou! Iniciando prócimo nível`);
+    alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível`);
     nextLevel();
   }
 }
