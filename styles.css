@@ -4,14 +4,25 @@
   background-color: rgb(22, 22, 22);
 }
 header{
+  display: flex;
   text-align: center;
   color: #ffffff;
   width: 100%;
+  flex-direction: column;
+  
+}
+h2{
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.button{
+  background-color: #ffffff;
 }
 .main{
   margin: 0;
   padding: 0;
-  height: 85vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -26,7 +37,7 @@ header{
   'yellow blue';
   grid-gap: 1rem;
   border: 1rem solid black;
-  background-color: black;
+  background-color: white;
   border-radius: 100%;
   width: 30rem;
   height: 30rem;
